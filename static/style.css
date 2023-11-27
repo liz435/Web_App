@@ -1,0 +1,35 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+}
+
+
+.title{
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+
+}
+
+.main{
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10% ;
+    flex-direction: row;
+    display: flex;
+    color: aliceblue;
+
+}
+
+.one{
+    flex:1
+}
+
+.two{
+    flex:1
+}
+
+.three{
+    flex:1
+}

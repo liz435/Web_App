@@ -18,13 +18,7 @@ def about():
 def contact():
     return render_template('contact.html')
 
-@app.route('/predict')
-def predict():
-    data = request.get_json()
-    predictions = model.predict(data)
-    response = jsonify({'predictions': predictions})
-    return response
-
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    print('running this cell')
+    app.run(debug=True, host='0.0.0.0', port=5001)

@@ -17,7 +17,7 @@
       .setTracker('TFFacemesh')
       .begin();
     webgazerInstance.showVideoPreview(true) /* shows all video previews */
-      .showPredictionPoints(false) /* shows a square every 100 milliseconds where current prediction is */
+      .showPredictionPoints(true) /* shows a square every 100 milliseconds where current prediction is */
       .applyKalmanFilter(true); // Kalman Filter defaults to on.
       // Add the SVG component on the top of everything.
     setupCollisionSystem();

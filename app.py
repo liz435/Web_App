@@ -4,6 +4,7 @@ import os
 import subprocess
 import mediapipe as mp
 
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -16,7 +17,9 @@ def about():
 
 @app.route('/contact')
 def contact():
+    print('here')
     return render_template('contact.html')
+    
 
 
 

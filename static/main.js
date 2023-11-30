@@ -35,7 +35,6 @@
   function setupCollisionSystem() {
     var width = window.innerWidth;
     var height = window.innerHeight;
-
     var numberOfNodes = 200;
 
     nodes = d3.range(numberOfNodes).map(function() { return {radius: Math.random() * 12 + 4}; }),
@@ -65,7 +64,7 @@
       //colors[i] = color(i%3);
       colors[i] = color(0);
     }
-    colors.push("orange");
+    colors.push("blue");
 
     svg.selectAll("circle")
     .data(nodes.slice(1))

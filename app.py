@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, url_for, redirect, jsonify
 import numpy as py
 import os
 import subprocess
+import mediapipe as mp
 
 app = Flask(__name__)
 
@@ -17,6 +18,8 @@ def about():
 def contact():
     return render_template('contact.html')
 
+
+
 @app.route("/generate_images", methods=["GET"])
 def generate_images():
     pkl_file = request.form.get("gan.pkl")
@@ -24,8 +27,6 @@ def generate_images():
     output_images_dest = request.form.get("output")
     seed_min = 3000
     num_images_generated = 1
-
-    
     # Set up the output directory
     output_images_dest = "model/" + str(output_images_dest)
     if not os.path.exists(output_images_dest):

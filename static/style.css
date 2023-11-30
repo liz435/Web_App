@@ -1,5 +1,6 @@
 body{
     font-family: 'Courier New', Courier, monospace;
+    background: rgb(254, 254, 254);
 }
 
 a{
@@ -47,16 +48,82 @@ title:visited{
 }
 
 .clickable{
-    display: block;
     background:aqua;
     width:120px;
     height: 120px;
     z-index: 1;
-    animation:calib 4s infinite;
+    animation:calib 60s infinite;
+    top:50%;
+   position: absolute;
+   animation-delay:10s;
+   border-radius: 50%;
+   
 }
-/* 
+
 @keyframes calib {
-    0% { left: 0; }
-    50% { left: 50%; }
-    100% { left: 0; }
-} */
+    0% {
+      left: 0%;
+      top: 50%;
+      background: aqua;
+    }
+    9% {
+      background: blue;
+    }
+    10% {
+      top: 0;
+      background: blue;
+    }
+    20% {
+      left: 90%;
+      top: 0;
+      background: aqua;
+    }
+    29% {
+      background: blue;
+    }
+    30% {
+      top: 90%;
+      background: blue;
+    }
+    40% {
+      left: 90%;
+      top: 50%;
+      background: aqua;
+    }
+    49% {
+      background: blue;
+    }
+    50% {
+      top: 0;
+      background: blue;
+    }
+    60% {
+      left: 0%;
+      top: 0;
+      background: aqua;
+    }
+    69% {
+      background: blue;
+    }
+    70% {
+      top: 90%;
+      background: blue;
+    }
+    80% {
+      left: 0%;
+      top: 50%;
+      background: aqua;
+    }
+    89% {
+      background: blue;
+    }
+    90% {
+      top: 0;
+      background: blue;
+    }
+    100% {
+      left: 50%;
+      top: 50%;
+      background: aqua;
+    }
+  }

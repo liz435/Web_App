@@ -102,7 +102,6 @@
     .attr("height",5)
     .attr("fill","red");
 
-
     svg.on("mousemove", function() {
       var p1 = d3.mouse(this);
       nodes[0].px = p1[0];

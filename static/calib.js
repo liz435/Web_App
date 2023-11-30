@@ -2,7 +2,7 @@ let circles = [];
 
 function createCircle() {
   let circle = document.createElement('div');
-  circle.classList.add('circle');
+  circle.classList.add('clickable');
   circle.style.top = Math.random() * window.innerHeight + 'px';
   circle.style.left = Math.random() * window.innerWidth + 'px';
 
@@ -15,4 +15,5 @@ function createCircle() {
   document.body.appendChild(circle);
 }
 
+createCircle()
 setInterval(createCircle(), 1000); // Create a new circle every second

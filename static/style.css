@@ -1,6 +1,5 @@
 body{
     font-family: 'Courier New', Courier, monospace;
-    background-color: black;
 }
 
 a{
@@ -47,8 +46,17 @@ title:visited{
     flex:1
 }
 
-.circle{
-    color:red;
+.clickable{
+    display: block;
+    background:aqua;
     width:120px;
     height: 120px;
+    z-index: 1;
+    animation:calib 4s infinite;
 }
+/* 
+@keyframes calib {
+    0% { left: 0; }
+    50% { left: 50%; }
+    100% { left: 0; }
+} */
